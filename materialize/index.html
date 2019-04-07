@@ -31,7 +31,7 @@
         <a href="#" class="btn-floating red btn-large"><i class="large material-icons">add</i></a>
 
         <!-- fixed action button -->
-        <div class="fixed-action-btn">
+        <div class="fixed-action-btn" style="margin:0 0 100px">
             <a class="btn-floating red btn-large">
                 <i class="large material-icons">mode_edit</i>
             </a>
@@ -97,10 +97,28 @@
 
     </div>
 
+    <!-- 190407(作成途中) -->
+    <div class="container">
+        <!-- TAP TARGET -->
+        <div class="fixed-action-btn" style="bottom:45px;right:24px">
+            <a id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating btn-large cyan ">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <!-- TAP TARGET CONTENT -->
+        <div class="tap-target cyan" data-activates="menu">
+            <div class="tap-target-content white-text">
+                <h5>Tap Target Content</h5>
+                <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis tempore expedita, obcaecati quibusdam at sequi! Exercitationem repellat aspernatur suscipit, commodi cumque fugiat voluptas nostrum voluptatum! Quisquam, fugiat corrupti. Itaque?</p>
+            </div>
+        </div>
+    </div>
+
 
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 </body>
 </html>
